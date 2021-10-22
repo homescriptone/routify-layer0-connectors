@@ -28,6 +28,7 @@
     "@layer0/cli": "^3.16.12",
     "@layer0/core": "^3.16.12",
     "@layer0/devtools": "^3.16.12",
-    "@layer0/prefetch": "^3.16.12"
+    "@layer0/prefetch": "^3.16.12",
+    "@roxi/routify": "^2.14.0"
   }
 }
