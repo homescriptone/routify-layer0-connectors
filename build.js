@@ -15,9 +15,7 @@ module.exports = async function build(skipFramework) {
         }
     }
 
-    builder
-        // optionally add some file required by the app at runtime.  This is equivalent to setting the includeFiles config in layer0.config.js
-        .addJSAsset('path/to/file/in/project')
+   builder.addJSAsset(process.cwd()+'/src/')
 
     // build the Layer0 deployment bundle in the .layer0 directory
     await builder.build()
