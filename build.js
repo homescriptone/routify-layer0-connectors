@@ -8,7 +8,7 @@ module.exports = async function build(skipFramework) {
     if (!skipFramework) {
         // run the sapper build
         try {
-        await builder.exec('npx @roxi/routify build')
+        await builder.exec('npm run build')
         } catch (e) {
         // this lets the user know that the build error was within their application code, not their Layer0 router or configuration.
         throw new FrameworkBuildError('Routify')
